@@ -53,7 +53,7 @@
                     <span>Username</span>
                   </div>
                   <div class="dropdown-menu" aria-labelledby="navDropToggler">
-                    <a class="dropdown-item" href="login.html">
+                    <a class="dropdown-item" href="./docs/login.html">
                       <i class="fa fa-power-off"></i> Logout
                     </a>
                   </div>
@@ -76,9 +76,9 @@
           </div>
           <div class="section font-weight-bold mt-2 pt-2">
             <a href="historyeduc.html">
-            <i class="fa fa-history fa-2x ml-3"></i>
-            <p>History Room</p>
-          </a>
+              <i class="fa fa-history fa-2x ml-3"></i>
+              <p>History Room</p>
+            </a>
           </div>
           <div class="section font-weight-bold mt-2 pt-2">
             <a href="education.html">
@@ -88,15 +88,15 @@
           </div>
           <div class="section font-weight-bold mt-2 pt-2">
             <a href="commsedu.html">
-            <i class="fa fa-comments fa-2x ml-3"></i>
-            <p>Communication</p>
-          </a>
+              <i class="fa fa-comments fa-2x ml-3"></i>
+              <p>Communication</p>
+            </a>
           </div>
           <div class="section font-weight-bold mt-2 pt-2">
-          <a href="settingsedu.html">
-            <i class="fa fa-cogs fa-2x ml-3" aria-hidden="true "></i>
-            <p>Settings Room</p>
-          </a>
+            <a href="settingsedu.html">
+              <i class="fa fa-cogs fa-2x ml-3" aria-hidden="true "></i>
+              <p>Settings Room</p>
+            </a>
           </div>
         </aside>
         <div class="row mt-5 pt-5">
@@ -121,78 +121,69 @@
         </div>
         <div class="container">
           <h3 class="mt-5 text-center">Your Account's Settings Room</h3>
-        <div class="row">
+          <div class="row">
             <div class="col-6">
-          <form>
-            <div class="profile">
-              <h5>Profile</h5>
+              <form>
+                <div class="profile">
+                  <h5>Profile</h5>
                   <div class="form-group" id="form-group">
-                    <label htmlFor="first_name">
-                      First name
-                    </label>
+                    <label htmlFor="first_name"> First name </label>
                     <input
                       type="text"
-                      placeholder=first_name
+                      placeholder="first_name"
                       class="form-control"
                       id="first_name"
-                      defaultValue=first_name
+                      defaultValue="first_name"
                     />
                   </div>
                   <div class="form-group" id="form-group">
-                    <label htmlFor="last_name">
-                      Last name
-                    </label>
+                    <label htmlFor="last_name"> Last name </label>
                     <input
                       type="text"
-                      placeholder=last_name
+                      placeholder="last_name"
                       class="form-control"
                       id="last_name"
-                      defaultValue=last_name
+                      defaultValue="last_name"
                     />
                   </div>
                   <div class="form-group" id="form-group">
-                    <label htmlFor="email">
-                      Email
-                    </label>
+                    <label htmlFor="email"> Email </label>
                     <input
                       type="email"
-                      placeholder=email
+                      placeholder="email"
                       class="form-control"
                       id="email"
-                      defaultValue=email
+                      defaultValue="email"
                     />
                   </div>
-                  
+
                   <div class="form-group" id="form-group">
-                    <label htmlFor="phone">
-                      Phone Number
-                    </label>
+                    <label htmlFor="phone"> Phone Number </label>
                     <input
                       type="number"
-                      placeholder=0788888888
+                      placeholder="0788888888"
                       class="form-control"
                       id="phone"
-                      defaultValue=0788888888
+                      defaultValue="0788888888"
                     />
-                  </div>    
-              <div class="col-md-12 col-sm-12 col-lg-12 col-12 " id="form-group">
-                <button type="submit" class="btn btn_color">
-                  <strong>
-                    Save Changes
-                  </strong>
-                </button>
-              </div>
+                  </div>
+                  <div
+                    class="col-md-12 col-sm-12 col-lg-12 col-12"
+                    id="form-group"
+                  >
+                    <button type="submit" class="btn btn_color">
+                      <strong> Save Changes </strong>
+                    </button>
+                  </div>
+                </div>
+              </form>
             </div>
-          </form>
-        </div>
-        <div class="col-6">
-            <form onSubmit={this.changePassword.bind(this)}>
+            <div class="col-6">
+              <form onSubmit="{this.changePassword.bind(this)}">
                 <div class="password">
                   <h5>Password</h5>
                   <div class="form-group" id="form-group">
-                    <label htmlFor="old_password">
-                      Old Password
-                    </label>
+                    <label htmlFor="old_password"> Old Password </label>
                     <input
                       type="password"
                       placeholder="Old Password"
@@ -201,9 +192,7 @@
                     />
                   </div>
                   <div class="form-group" id="form-group">
-                    <label htmlFor="new_password">
-                      New Password
-                    </label>
+                    <label htmlFor="new_password"> New Password </label>
                     <input
                       type="Password"
                       placeholder="New Password"
@@ -212,9 +201,7 @@
                     />
                   </div>
                   <div class="form-group" id="form-group">
-                    <label htmlFor="comfirm_password">
-                      Confirm Password
-                    </label>
+                    <label htmlFor="comfirm_password"> Confirm Password </label>
                     <input
                       type="password"
                       placeholder="Confirm Password"
@@ -222,19 +209,20 @@
                       id="comfirm_password"
                     />
                   </div>
-                  
-                  <div class="col-md-12 col-sm-12 col-lg-12 col-12 " id="form-group">
+
+                  <div
+                    class="col-md-12 col-sm-12 col-lg-12 col-12"
+                    id="form-group"
+                  >
                     <button type="submit" class="btn btn_color">
-                      <strong>
-                        Save
-                      </strong>
+                      <strong> Save </strong>
                     </button>
                   </div>
                 </div>
               </form>
+            </div>
+          </div>
         </div>
-        </div>
-    </div> 
       </div>
       <script src="./js/jquery.min.js"></script>
       <script src="./js/bootstrap.min.js"></script>
