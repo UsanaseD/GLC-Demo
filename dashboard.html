@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Usanase's</title>
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/acceulle.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <body>
+      <div class="container-fluid">
+        <div class="row">
+          <header>
+            <nav class="navbar fixed-top bg-white shadow-sm" id="navbar">
+              <a class="menu-toggle">
+                <i class="fa fa-bars"></i>
+              </a>
+              <div class="d-flex custom-nav">
+                <div class="nav navbar-nav">
+                  <form class="form-inline search-form pr-5 pr-lg-5 pr-sm-3">
+                    <div class="col-12">
+                      <div class="input-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Search"
+                          aria-label="Search"
+                          aria-describedby="basic-addon1"
+                        />
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="basic-addon1"
+                            ><i class="fa fa-search"></i
+                          ></span>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <li class="nav dropdown" id="dropdown">
+                  <div
+                    class="dropdown-toggle"
+                    id="navDropToggler"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="true"
+                  >
+                    <div class="icon mr-2"></div>
+                    <span>Username</span>
+                  </div>
+                  <div class="dropdown-menu" aria-labelledby="navDropToggler">
+                    <a class="dropdown-item" href="login.html">
+                      <i class="fa fa-power-off"></i> Logout
+                    </a>
+                  </div>
+                </li>
+              </div>
+            </nav>
+          </header>
+        </div>
+        <aside class="left-sidebar maximized">
+          <nav variant="pills" class="tabContainer">
+            <div id="logo_paddin">
+              <img src="images/lgs-grey.png" alt="logo" />
+            </div>
+          </nav>
+          <div class="section font-weight-bold mt-2 pt-2">
+            <a href="analytics.html">
+              <i class="fa fa-line-chart fa-2x ml-3"></i>
+              <p>analytics Room</p>
+            </a>
+          </div>
+          <div class="section font-weight-bold mt-2 pt-2">
+            <a href="history.html">
+            <i class="fa fa-history fa-2x ml-3"></i>
+            <p>History Room</p>
+          </a>
+          </div>
+          <div class="section font-weight-bold mt-2 pt-2">
+            <a href="dashboard.html">
+              <i class="fa fa-table fa-2x ml-3"></i>
+              <p>situation Room</p>
+            </a>
+          </div>
+          <div class="section font-weight-bold mt-2 pt-2">
+            <a href="comms.html">
+            <i class="fa fa-comments fa-2x ml-3"></i>
+            <p>Communication</p>
+          </a>
+          </div>
+          <div class="section font-weight-bold mt-2 pt-2">
+          <a href="settings.html">
+            <i class="fa fa-cogs fa-2x ml-3" aria-hidden="true "></i>
+            <p>Settings Room</p>
+          </a>
+          </div>
+        </aside>
+        <div class="row mt-5 pt-5">
+          <div class="col-4">
+            <div class="custom-card">
+              <span class="period">Daily Records</span>
+              <div class="num font-weight-bold">0</div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="custom-card">
+              <span class="period">Weekly Records</span>
+              <div class="num font-weight-bold">0</div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="custom-card">
+              <span class="period">Monthly Records</span>
+              <div class="num font-weight-bold">0</div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <h3 class="mt-5">Sector's Situation Room</h3>
+          <ul class="nav nav-tabs mt-3">
+            <li class="nav-item">
+              <a data-toggle="tab" class="nav-link active" href="#home"
+                >Education</a
+              >
+            </li>
+            <li class="nav-item">
+              <a data-toggle="tab" class="nav-link" href="#menu1">Veterinary</a>
+            </li>
+            <li class="nav-item">
+              <a data-toggle="tab" class="nav-link" href="#menu2"
+                >social Affairs</a
+              >
+            </li>
+            <li class="nav-item">
+              <a data-toggle="tab" class="nav-link" href="#menu3">Dasso</a>
+            </li>
+            <li>
+              <span class="ml-5 pl-5">
+                <i class="fa fa-paperclip fa-lg" aria-hidden="true">
+                  <a class="excel" href="#">Export to Excel</a>
+                </i>
+              </span>
+            </li>
+          </ul>
+
+          <div class="tab-content">
+            <div id="home" class="tab-pane active">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th scope="col">Year</th>
+                    <th scope="col">TVETs</th>
+                    <th scope="col">9-years</th>
+                    <th scope="col">12-years</th>
+                    <th scope="col">Secondary sch</th>
+                    <th scope="col">Primary sch</th>
+                    <th scope="col">Nursary sch</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">2018</th>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>3</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2019</th>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>3</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2020</th>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>3</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div id="menu1" class="tab-pane fade">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th scope="col">Month</th>
+                    <th scope="col">Girinka Beneficialies</th>
+                    <th scope="col">Girinka waiting</th>
+                    <th scope="col">Girinka dead cows</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Jan</th>
+                    <td>23</td>
+                    <td>32</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Feb</th>
+                    <td>27</td>
+                    <td>30</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">March</th>
+                    <td>30</td>
+                    <td>29</td>
+                    <td>1</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div id="menu2" class="tab-pane fade">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th scope="col">Month</th>
+                    <th scope="col">Have Mutuelle</th>
+                    <th scope="col">Don't Have Mutuelle</th>
+                    <th scope="col">VUP</th>
+                    <th scope="col">FARG</th>
+                    <th scope="col">Risk Zone Habbittants</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Jan</th>
+                    <td>23</td>
+                    <td>43</td>
+                    <td>32</td>
+                    <td>2</td>
+                    <td>12</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Feb</th>
+                    <td>23</td>
+                    <td>43</td>
+                    <td>32</td>
+                    <td>2</td>
+                    <td>12</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">March</th>
+                    <td>23</td>
+                    <td>43</td>
+                    <td>32</td>
+                    <td>2</td>
+                    <td>12</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div id="menu3" class="tab-pane fade">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th scope="col">Month</th>
+                    <th scope="col">Insecurity Incidents</th>
+                    <th scope="col">Dasso staff</th>
+                    <th scope="col">Security Events</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Jan</th>
+                    <td>43</td>
+                    <td>342</td>
+                    <td>23</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Feb</th>
+                    <td>43</td>
+                    <td>342</td>
+                    <td>23</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">March</th>
+                    <td>43</td>
+                    <td>342</td>
+                    <td>23</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="./js/jquery.min.js"></script>
+      <script src="./js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="./js/index.js"></script>
+    </body>
+  </head>
+</html>

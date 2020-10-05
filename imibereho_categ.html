@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Usanase's</title>
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/acceulle.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <header>
+                <nav class="navbar fixed-top bg-white shadow-sm" id="navbar">
+                    <a class="menu-toggle">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                    <div class="d-flex custom-nav">
+                        <div class="nav navbar-nav">
+                            <form class="form-inline search-form pr-5 pr-lg-5 pr-sm-3">
+                                <div class="col-12">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Search" aria-label="Search"
+                                            aria-describedby="basic-addon1" />
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="basic-addon1"><i
+                                                    class="fa fa-search"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <li class="nav dropdown" id="dropdown">
+                            <div class="dropdown-toggle" id="navDropToggler" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="true">
+                                <div class="icon mr-2"></div>
+                                <span>Username</span>
+                            </div>
+                            <div class="dropdown-menu" aria-labelledby="navDropToggler">
+                                <a class="dropdown-item" href="login.html">
+                                    <i class="fa fa-power-off"></i> Logout
+                                </a>
+                            </div>
+                        </li>
+                    </div>
+                </nav>
+            </header>
+        </div>
+        <aside class="left-sidebar maximized">
+            <nav variant="pills" class="tabContainer">
+                <div id="logo_paddin">
+                    <img src="images/lgs-grey.png" alt="logo" />
+                </div>
+            </nav>
+            <div class="section font-weight-bold mt-2 pt-2">
+                <a href="imibereho_analytics.html">
+                    <i class="fa fa-line-chart fa-2x ml-3"></i>
+                    <p>analytics Room</p>
+                </a>
+            </div>
+            <div class="section font-weight-bold mt-2 pt-2">
+                <a href="imibereho_history.html">
+                    <i class="fa fa-history fa-2x ml-3"></i>
+                    <p>History Room</p>
+                </a>
+            </div>
+            <div class="section font-weight-bold mt-2 pt-2">
+                <a href="imibereho.html">
+                    <i class="fa fa-table fa-2x ml-3"></i>
+                    <p>situation Room</p>
+                </a>
+            </div>
+            <div class="section font-weight-bold mt-2 pt-2">
+                <a href="imibereho_categ.html">
+                    <i class="fa fa-comments fa-2x ml-3"></i>
+                    <p>Category Room</p>
+                </a>
+            </div>
+            <div class="section font-weight-bold mt-2 pt-2">
+                <a href="imibereho_settings.html">
+                    <i class="fa fa-cogs fa-2x ml-3" aria-hidden="true "></i>
+                    <p>Settings Room</p>
+                </a>
+            </div>
+        </aside>
+        <div class="row mt-5 pt-5">
+            <div class="col-4">
+                <div class="custom-card">
+                    <span class="period">Daily Records</span>
+                    <div class="num font-weight-bold">0</div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="custom-card">
+                    <span class="period">Weekly Records</span>
+                    <div class="num font-weight-bold">0</div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="custom-card">
+                    <span class="period">Monthly Records</span>
+                    <div class="num font-weight-bold">0</div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h3 class="mt-5">Imibereho myiza's Category Room</h3>
+            <div class="row">
+                <div class="col-9">
+                    <!-- <ul class="nav nav-tabs mt-3">
+                        <li class="nav-item">
+                            <a data-toggle="tab" class="nav-link active" href="#home">Direct Support</a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-toggle="tab" class="nav-link" href="#menu1">Dropouts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-toggle="tab" class="nav-link" href="#menu2">Malnutritions</a>
+                        </li>
+                        <!--  <li class="nav-item">
+                            <a data-toggle="tab" class="nav-link" href="#menu3">Secondary sch</a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-toggle="tab" class="nav-link" href="#menu4">Primary sch</a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-toggle="tab" class="nav-link" href="#menu5">Nursary sch</a>
+                        </li>
+                        <li> -->
+                        <span class="ml-5 pl-5">
+                            <i class="fa fa-paperclip fa-lg" aria-hidden="true">
+                                <a class="excel" href="#">Export to Excel</a>
+                            </i>
+                        </span>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="home" class="tab-pane active">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Category</th>
+                                        <th scope="col">Records</th>
+                                        <th scope="col">Description</th>
+                                        <th scope="col">Date</th>
+                                        <th scope="col">Action</th>
+                                        <!-- <th scope="col">N.E pass</th>
+                                        <th scope="col">N.E fail</th>
+                                        <th scope="col">school-feedind</th>
+                                        <th scope="col">Year</th>
+                                        <th scope="col">Action</th> -->
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Dropouts</td>
+                                        <td>110</td>
+                                        <td>a set of records for droupouts in my village</td>
+                                        <td>22-8-2020</td>
+                                        <!-- <td>17%</td>
+                                        <td>450,000,00</td>
+                                        <td>2018</td> -->
+                                        <td>
+                                            <div className="row icons">
+                                                <a>
+                                                    <i id="trash" class="fa fa-trash trash"></i>
+                                                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Direct Support</td>
+                                        <td>110</td>
+                                        <td>a set of records for direct support in my village</td>
+                                        <td>20-2-2020</td>
+                                        <td>
+                                            <div className="row icons">
+                                                <a>
+                                                    <i id="trash" class="fa fa-trash trash"></i>
+                                                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>Malnutritions</td>
+                                        <td>100</td>
+                                        <td>a set of records for malnutrions in my village</td>
+                                        <td>20-2-2020</td>
+                                        <td>
+                                            <div className="row icons">
+                                                <a>
+                                                    <i id="trash" class="fa fa-trash trash"></i>
+                                                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div id="menu1" class="tab-pane fade">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Names</th>
+                                        <th scope="col">DOB</th>
+                                        <th scope="col">Father</th>
+                                        <th scope="col">Mother</th>
+                                        <th scope="col">Parents-ID</th>
+                                        <th scope="col">contact</th>
+                                        <th scope="col">Action</th>
+                                        <!-- <th scope="col">N.E fail</th>
+                                        <th scope="col">school-feedind</th>
+                                        <th scope="col">Year</th> -->
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Kamali JP</td>
+                                        <td>12-12-2010</td>
+                                        <td>Jean migabo</td>
+                                        <td>mahoro jeanne</td>
+                                        <td>1970000000000000</td>
+                                        <td>078888888</td>
+                                        <!-- <td>17%</td>
+                                        <td>450,000,00</td>
+                                        <td>2018</td> -->
+                                        <td>
+                                            <div className="row icons">
+                                                <a>
+                                                    <i id="trash" class="fa fa-trash trash"></i>
+                                                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Kamali JP</td>
+                                        <td>12-12-2010</td>
+                                        <td>Jean migabo</td>
+                                        <td>mahoro jeanne</td>
+                                        <td>1970000000000000</td>
+                                        <td>078888888</td>
+                                        <td>
+                                            <div className="row icons">
+                                                <a>
+                                                    <i id="trash" class="fa fa-trash trash"></i>
+                                                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>Kamali JP</td>
+                                        <td>12-12-2010</td>
+                                        <td>Jean migabo</td>
+                                        <td>mahoro jeanne</td>
+                                        <td>1970000000000000</td>
+                                        <td>078888888</td>
+                                        <td>
+                                            <div className="row icons">
+                                                <a>
+                                                    <i id="trash" class="fa fa-trash trash"></i>
+                                                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div id="menu2" class="tab-pane fade">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Names</th>
+                                        <th scope="col">DOB</th>
+                                        <th scope="col">Category</th>
+                                        <th scope="col">Father</th>
+                                        <th scope="col">Mother</th>
+                                        <th scope="col">Parents-ID</th>
+                                        <th scope="col">contact</th>
+                                        <th scope="col">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Kamali JP</td>
+                                        <td>12-12-2010</td>
+                                        <td>Yellow</td>
+                                        <td>Jean migabo</td>
+                                        <td>mahoro jeanne</td>
+                                        <td>1970000000000000</td>
+                                        <td>078888888</td>
+                                        <td>
+                                            <div className="row icons">
+                                                <a>
+                                                    <i id="trash" class="fa fa-trash trash"></i>
+                                                    <i class="fa fa-pencil-square-o pl-3" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Kamali JP</td>
+                                        <td>12-12-2010</td>
+                                        <td>Red</td>
+                                        <td>Jean migabo</td>
+                                        <td>mahoro jeanne</td>
+                                        <td>1970000000000000</td>
+                                        <td>078888888</td>
+                                        <td>
+                                            <div className="row icons">
+                                                <a>
+                                                    <i id="trash" class="fa fa-trash trash"></i>
+                                                    <i class="fa fa-pencil-square-o pl-3" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>Kamali JP</td>
+                                        <td>12-12-2010</td>
+                                        <td>Yellow</td>
+                                        <td>Jean migabo</td>
+                                        <td>mahoro jeanne</td>
+                                        <td>1970000000000000</td>
+                                        <td>078888888</td>
+                                        <td>
+                                            <div className="row icons">
+                                                <a>
+                                                    <i id="trash" class="fa fa-trash trash"></i>
+                                                    <i class="fa fa-pencil-square-o pl-3" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <form>
+                        <!-- <div class="form-group">
+                            <label htmlFor="supplier" class="font-weight-bold">
+                                <strong>Category</strong><span class="errorTxt"> *</span>
+                            </label>
+                            <select class="form-control" id="supplier" value="{this.state.selectedSupplier}">
+                                <option value="Select_Supplier" selected disabled>--Select Category--</option>
+                                <option key="" value="{supplierName.id}">
+                                    Direct Support
+                                </option>
+                                <option key="" value="{supplierName.id}">
+                                    Dropouts
+                                </option>
+                                <option key="" value="{supplierName.id}">
+                                    Malnutritions
+                                </option>
+                            </select>
+                        </div> -->
+                        <div class="form-group">
+                            <label htmlFor="product" class="font-weight-bold">
+                                <strong>Category</strong><span class="errorTxt"> *</span>
+                            </label>
+                            <input type="text" placeholder="Category" class="form-control" id="product" />
+                        </div>
+                        <div class="form-group">
+                            <label htmlFor="quantity" class="font-weight-bold">
+                                <strong>Description</strong><span class="errorTxt"> *</span>
+                            </label>
+                            <input type="number" placeholder="Description" class="form-control" id="quantity" />
+                        </div>
+                        <!-- <div class="form-group">
+                            <label htmlFor="quantity" class="font-weight-bold">
+                                <strong>DOB</strong><span class="errorTxt"> *</span>
+                            </label>
+                            <input type="number" placeholder="DOB" class="form-control" id="min_quantity" />
+                        </div>
+                        <div class="form-group">
+                            <label htmlFor="price" class="font-weight-bold">
+                                <strong>NID</strong><span class="errorTxt"> *</span>
+                            </label>
+                            <input type="number" placeholder="NID" class="form-control" id="price" />
+                        </div>
+                        <div class="form-group">
+                            <label htmlFor="price" class="font-weight-bold">
+                                <strong>Malnut-cat</strong><span class="errorTxt"> *</span>
+                            </label>
+                            <input type="number" placeholder="Malnut-category" class="form-control" id="price" />
+                        </div>
+                        <div class="form-group">
+                            <label htmlFor="price" class="font-weight-bold">
+                                <strong>Father</strong><span class="errorTxt"> *</span>
+                            </label>
+                            <input type="number" placeholder="Father" class="form-control" id="price" />
+                        </div>
+                        <div class="form-group">
+                            <label htmlFor="price" class="font-weight-bold">
+                                <strong>Mother</strong><span class="errorTxt"> *</span>
+                            </label>
+                            <input type="number" placeholder="Mother" class="form-control" id="price" />
+                        </div> -->
+
+
+                        <div class="form-group">
+                            <button type="submit"
+                                class="login-btn btn btn_color text-center px-5 py-2 font-weight-bold">
+                                <span class="font_size_login"><a href="#">Save</a></span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
+</body>
+</head>
+
+</html>

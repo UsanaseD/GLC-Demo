@@ -1,0 +1,57 @@
+.img{
+    width: 50%;
+    height: 50%;
+}
+#row{
+    margin-top: 50px;   
+    margin-bottom: 50px;  
+}
+.profile{
+    background-color: white;
+    padding: 20px;
+    border-radius: 2%;
+    box-shadow: 1px 2px 5px 3px #f4f5f6;
+}
+.password{
+    background-color: white;
+    padding: 20px;
+    border-radius: 2%;
+    box-shadow: 1px 2px 5px 3px #f4f5f6;
+}
+.user{
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 2%;
+    box-shadow: 1px 2px 5px 3px #f4f5f6;
+}
+.form-control{
+    background-color: #f4f5f6 !important;
+}
+#form-group{
+    margin-top: 20px;
+}
+.btn_color{
+    background-color: #12ca49;
+    color: #ffffff;
+}
+
+/*TABLETS*/
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+
+
+}
+
+/*MOBILE PHONE*/
+
+@media (max-width: 767.99px) {
+
+.profile{
+    margin-bottom: 10px;
+}
+.password{
+    margin-bottom: 10px;
+}   
+}

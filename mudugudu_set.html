@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Usanase's</title>
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/acceulle.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/settings.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <header>
+                <nav class="navbar fixed-top bg-white shadow-sm" id="navbar">
+                    <a class="menu-toggle">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                    <div class="d-flex custom-nav">
+                        <div class="nav navbar-nav">
+                            <form class="form-inline search-form pr-5 pr-lg-5 pr-sm-3">
+                                <div class="col-12">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Search" aria-label="Search"
+                                            aria-describedby="basic-addon1" />
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="basic-addon1"><i
+                                                    class="fa fa-search"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <li class="nav dropdown" id="dropdown">
+                            <div class="dropdown-toggle" id="navDropToggler" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="true">
+                                <div class="icon mr-2"></div>
+                                <span>Username</span>
+                            </div>
+                            <div class="dropdown-menu" aria-labelledby="navDropToggler">
+                                <a class="dropdown-item" href="login.html">
+                                    <i class="fa fa-power-off"></i> Logout
+                                </a>
+                            </div>
+                        </li>
+                    </div>
+                </nav>
+            </header>
+        </div>
+        <aside class="left-sidebar maximized">
+            <nav variant="pills" class="tabContainer">
+                <div id="logo_paddin">
+                    <img src="images/lgs-grey.png" alt="logo" />
+                </div>
+            </nav>
+            <div class="section font-weight-bold mt-2 pt-2">
+                <a href="analytics.html">
+                    <i class="fa fa-line-chart fa-2x ml-3"></i>
+                    <p>analytics Room</p>
+                </a>
+            </div>
+            <div class="section font-weight-bold mt-2 pt-2">
+                <a href="history.html">
+                    <i class="fa fa-history fa-2x ml-3"></i>
+                    <p>History Room</p>
+                </a>
+            </div>
+            <div class="section font-weight-bold mt-2 pt-2">
+                <a href="dashboard.html">
+                    <i class="fa fa-table fa-2x ml-3"></i>
+                    <p>situation Room</p>
+                </a>
+            </div>
+            <div class="section font-weight-bold mt-2 pt-2">
+                <a href="comms.html">
+                    <i class="fa fa-comments fa-2x ml-3"></i>
+                    <p>Communication</p>
+                </a>
+            </div>
+            <div class="section font-weight-bold mt-2 pt-2">
+                <a href="settings.html">
+                    <i class="fa fa-cogs fa-2x ml-3" aria-hidden="true "></i>
+                    <p>Settings Room</p>
+                </a>
+            </div>
+        </aside>
+        <div class="row mt-5 pt-5">
+            <div class="col-4">
+                <div class="custom-card">
+                    <span class="period">Daily Records</span>
+                    <div class="num font-weight-bold">0</div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="custom-card">
+                    <span class="period">Weekly Records</span>
+                    <div class="num font-weight-bold">0</div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="custom-card">
+                    <span class="period">Monthly Records</span>
+                    <div class="num font-weight-bold">0</div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h3 class="mt-5 text-center">Your Account's Settings Room</h3>
+            <div class="row">
+                <div class="col-6">
+                    <form>
+                        <div class="profile">
+                            <h5>Profile</h5>
+                            <div class="form-group" id="form-group">
+                                <label htmlFor="first_name">
+                                    First name
+                                </label>
+                                <input type="text" placeholder=first_name class="form-control" id="first_name"
+                                    defaultValue=first_name />
+                            </div>
+                            <div class="form-group" id="form-group">
+                                <label htmlFor="last_name">
+                                    Last name
+                                </label>
+                                <input type="text" placeholder=last_name class="form-control" id="last_name"
+                                    defaultValue=last_name />
+                            </div>
+                            <div class="form-group" id="form-group">
+                                <label htmlFor="email">
+                                    Email
+                                </label>
+                                <input type="email" placeholder=email class="form-control" id="email"
+                                    defaultValue=email />
+                            </div>
+
+                            <div class="form-group" id="form-group">
+                                <label htmlFor="phone">
+                                    Phone Number
+                                </label>
+                                <input type="number" placeholder=0788888888 class="form-control" id="phone"
+                                    defaultValue=0788888888 />
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-lg-12 col-12 " id="form-group">
+                                <button type="submit" class="btn btn_color">
+                                    <strong>
+                                        Save Changes
+                                    </strong>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-6">
+                    <form onSubmit={this.changePassword.bind(this)}>
+                        <div class="password">
+                            <h5>Password</h5>
+                            <div class="form-group" id="form-group">
+                                <label htmlFor="old_password">
+                                    Old Password
+                                </label>
+                                <input type="password" placeholder="Old Password" class="form-control"
+                                    id="old_password" />
+                            </div>
+                            <div class="form-group" id="form-group">
+                                <label htmlFor="new_password">
+                                    New Password
+                                </label>
+                                <input type="Password" placeholder="New Password" class="form-control"
+                                    id="new_password" />
+                            </div>
+                            <div class="form-group" id="form-group">
+                                <label htmlFor="comfirm_password">
+                                    Confirm Password
+                                </label>
+                                <input type="password" placeholder="Confirm Password" class="form-control"
+                                    id="comfirm_password" />
+                            </div>
+
+                            <div class="col-md-12 col-sm-12 col-lg-12 col-12 " id="form-group">
+                                <button type="submit" class="btn btn_color">
+                                    <strong>
+                                        Save
+                                    </strong>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
+</body>
+</head>
+
+</html>

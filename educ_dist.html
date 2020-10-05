@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Usanase's</title>
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/acceulle.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <body>
+      <div class="container-fluid">
+        <div class="row">
+          <header>
+            <nav class="navbar fixed-top bg-white shadow-sm" id="navbar">
+              <a class="menu-toggle">
+                <i class="fa fa-bars"></i>
+              </a>
+              <div class="d-flex custom-nav">
+                <div class="nav navbar-nav">
+                  <form class="form-inline search-form pr-5 pr-lg-5 pr-sm-3">
+                    <div class="col-12">
+                      <div class="input-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Search"
+                          aria-label="Search"
+                          aria-describedby="basic-addon1"
+                        />
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="basic-addon1"
+                            ><i class="fa fa-search"></i
+                          ></span>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <li class="nav dropdown" id="dropdown">
+                  <div
+                    class="dropdown-toggle"
+                    id="navDropToggler"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="true"
+                  >
+                    <div class="icon mr-2"></div>
+                    <span>Username</span>
+                  </div>
+                  <div class="dropdown-menu" aria-labelledby="navDropToggler">
+                    <a class="dropdown-item" href="login.html">
+                      <i class="fa fa-power-off"></i> Logout
+                    </a>
+                  </div>
+                </li>
+              </div>
+            </nav>
+          </header>
+        </div>
+        <aside class="left-sidebar maximized">
+          <nav variant="pills" class="tabContainer">
+            <div id="logo_paddin">
+              <img src="images/lgs-grey.png" alt="logo" />
+            </div>
+          </nav>
+          <div class="section font-weight-bold mt-2 pt-2">
+            <a href="dist_analyt.html">
+              <i class="fa fa-line-chart fa-2x ml-3"></i>
+              <p>analytics Room</p>
+            </a>
+          </div>
+          <div class="section font-weight-bold mt-2 pt-2">
+            <a href="dist_hist.html">
+              <i class="fa fa-history fa-2x ml-3"></i>
+              <p>History Room</p>
+            </a>
+          </div>
+          <div class="section font-weight-bold mt-2 pt-2">
+            <a href="educ_dist.html">
+              <i class="fa fa-table fa-2x ml-3"></i>
+              <p>situation Room</p>
+            </a>
+          </div>
+          <div class="section font-weight-bold mt-2 pt-2">
+            <a href="dist_coms.html">
+              <i class="fa fa-comments fa-2x ml-3"></i>
+              <p>Communication</p>
+            </a>
+          </div>
+          <div class="section font-weight-bold mt-2 pt-2">
+            <a href="dist_settings.html">
+              <i class="fa fa-cogs fa-2x ml-3" aria-hidden="true "></i>
+              <p>Settings Room</p>
+            </a>
+          </div>
+        </aside>
+        <div class="row mt-5 pt-5">
+          <div class="col-4">
+            <div class="custom-card">
+              <span class="period">Daily Records</span>
+              <div class="num font-weight-bold">0</div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="custom-card">
+              <span class="period">Weekly Records</span>
+              <div class="num font-weight-bold">0</div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="custom-card">
+              <span class="period">Monthly Records</span>
+              <div class="num font-weight-bold">0</div>
+            </div>
+          </div>
+        </div>
+        <div class="container" >
+          <h3 class="mt-5" id="header">District's Education Situation Room</h3>
+          <div class="row">
+            <div class="col-9" >
+              <ul class="nav nav-tabs mt-3" >
+                <li class="nav-item">
+                  <a data-toggle="tab" class="nav-link " href="#home"
+                    >TVETs</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a data-toggle="tab" class="nav-link " href="#menu1"
+                    >9-years</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a data-toggle="tab" class="nav-link" href="#menu2"
+                    >12-years</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a data-toggle="tab" class="nav-link" href="#menu3">Secondary sch</a>
+                </li>
+                <li class="nav-item">
+                    <a data-toggle="tab" class="nav-link" href="#menu4">Primary sch</a>
+                  </li>
+                  <li class="nav-item">
+                    <a data-toggle="tab" class="nav-link" href="#menu5">Nursary sch</a>
+                  </li>
+                <li>
+                  <span class="ml-5 pl-5">
+                    <i class="fa fa-paperclip fa-lg" aria-hidden="true">
+                      <a class="excel" href="#">Export to Excel</a>
+                    </i>
+                  </span>
+                </li>
+              </ul>
+              <div class="tab-content">
+                <div id="home" class="tab-pane fade">
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Contact</th>
+                        <th scope="col">Teachers</th>
+                        <th scope="col">Students</th>
+                        <th scope="col">N.E pass</th>
+                        <th scope="col">N.E fail</th>
+                        <th scope="col">school-feedind</th>
+                        <th scope="col">Year</th>
+                        <th scope="col">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Hinga TVET school</td>
+                        <td>0788888888</td>
+                        <td>22</td>
+                        <td>104</td>
+                        <td>83%</td>
+                        <td>17%</td>
+                        <td>450,000,00</td>
+                        <td>2018</td>
+                        <td>
+                            <div className="row icons">
+                            <a>
+                            <i
+                              id="trash"
+                              class="fa fa-trash trash"
+                            ></i>
+                            <i class="fa fa-pencil-square-o pl-3" aria-hidden="true"></i>
+                          </a>
+                        </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Hinga TVET school</td>
+                        <td>0788888888</td>
+                        <td>22</td>
+                        <td>104</td>
+                        <td>83%</td>
+                        <td>17%</td>
+                        <td>450,000,00</td>
+                        <td>2019</td>
+                        <td>
+                            <div className="row icons">
+                            <a>
+                            <i
+                              id="trash"
+                              class="fa fa-trash trash"
+                            ></i>
+                            <i class="fa fa-pencil-square-o pl-3" aria-hidden="true"></i>
+                          </a>
+                        </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Hinga TVET school</td>
+                        <td>0788888888</td>
+                        <td>22</td>
+                        <td>104</td>
+                        <td>83%</td>
+                        <td>17%</td>
+                        <td>450,000,00</td>
+                        <td>2020</td>
+                        <td>
+                            <div className="row icons">
+                            <a>
+                            <i
+                              id="trash"
+                              class="fa fa-trash trash"
+                            ></i>
+                            <i class="fa fa-pencil-square-o pl-3" aria-hidden="true"></i>
+                          </a>
+                        </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div id="menu1" class="tab-pane fade">
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Contact</th>
+                        <th scope="col">Teachers</th>
+                        <th scope="col">Students</th>
+                        <th scope="col">N.E pass</th>
+                        <th scope="col">N.E fail</th>
+                        <th scope="col">school-feedind</th>
+                        <th scope="col">Year</th>
+                        <th scope="col">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>GS Ryama</td>
+                        <td>0788888888</td>
+                        <td>22</td>
+                        <td>104</td>
+                        <td>83%</td>
+                        <td>17%</td>
+                        <td>450,000,00</td>
+                        <td>2018</td>
+                        <td>
+                            <div className="row icons">
+                            <a>
+                            <i
+                              id="trash"
+                              class="fa fa-trash trash"
+                            ></i>
+                            <i class="fa fa-pencil-square-o pl-3" aria-hidden="true"></i>
+                          </a>
+                        </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>GS Ryama</td>
+                        <td>0788888888</td>
+                        <td>22</td>
+                        <td>104</td>
+                        <td>83%</td>
+                        <td>17%</td>
+                        <td>450,000,00</td>
+                        <td>2019</td>
+                        <td>
+                            <div className="row icons">
+                            <a>
+                            <i
+                              id="trash"
+                              class="fa fa-trash trash"
+                            ></i>
+                            <i class="fa fa-pencil-square-o pl-3" aria-hidden="true"></i>
+                          </a>
+                        </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>GS Ryama</td>
+                        <td>0788888888</td>
+                        <td>22</td>
+                        <td>104</td>
+                        <td>83%</td>
+                        <td>17%</td>
+                        <td>450,000,00</td>
+                        <td>2020</td>
+                        <td>
+                            <div className="row icons">
+                            <a>
+                            <i
+                              id="trash"
+                              class="fa fa-trash trash"
+                            ></i>
+                            <i class="fa fa-pencil-square-o pl-3" aria-hidden="true"></i>
+                          </a>
+                        </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div id="menu2" class="tab-pane fade">
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Contact</th>
+                        <th scope="col">Teachers</th>
+                        <th scope="col">Students</th>
+                        <th scope="col">N.E pass</th>
+                        <th scope="col">N.E fail</th>
+                        <th scope="col">school-feedind</th>
+                        <th scope="col">Year</th>
+                        <th scope="col">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>GS Genda</td>
+                        <td>0788888888</td>
+                        <td>22</td>
+                        <td>104</td>
+                        <td>83%</td>
+                        <td>17%</td>
+                        <td>450,000,00</td>
+                        <td>2018</td>
+                        <td>
+                            <div className="row icons">
+                            <a>
+                            <i
+                              id="trash"
+                              class="fa fa-trash trash"
+                            ></i>
+                            <i class="fa fa-pencil-square-o pl-3" aria-hidden="true"></i>
+                          </a>
+                        </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>GS Genda</td>
+                        <td>0788888888</td>
+                        <td>22</td>
+                        <td>104</td>
+                        <td>83%</td>
+                        <td>17%</td>
+                        <td>450,000,00</td>
+                        <td>2019</td>
+                        <td>
+                            <div className="row icons">
+                            <a>
+                            <i
+                              id="trash"
+                              class="fa fa-trash trash"
+                            ></i>
+                            <i class="fa fa-pencil-square-o pl-3" aria-hidden="true"></i>
+                          </a>
+                        </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>GS Genda</td>
+                        <td>0788888888</td>
+                        <td>22</td>
+                        <td>104</td>
+                        <td>83%</td>
+                        <td>17%</td>
+                        <td>450,000,00</td>
+                        <td>2020</td>
+                        <td>
+                            <div className="row icons">
+                            <a>
+                            <i
+                              id="trash"
+                              class="fa fa-trash trash"
+                            ></i>
+                            <i class="fa fa-pencil-square-o pl-3" aria-hidden="true"></i>
+                          </a>
+                        </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div id="menu3" class="tab-pane fade">
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Contact</th>
+                        <th scope="col">Teachers</th>
+                        <th scope="col">Students</th>
+                        <th scope="col">N.E pass</th>
+                        <th scope="col">N.E fail</th>
+                        <th scope="col">school-feedind</th>
+                        <th scope="col">Year</th>
+                        <th scope="col">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Umurenge Secondary School</td>
+                        <td>0788888888</td>
+                        <td>22</td>
+                        <td>104</td>
+                        <td>83%</td>
+                        <td>17%</td>
+                        <td>450,000,00</td>
+                        <td>2018</td>
+                        <td>
+                            <div className="row icons">
+                            <a>
+                            <i
+                              id="trash"
+                              class="fa fa-trash trash"
+                            ></i>
+                            <i class="fa fa-pencil-square-o pl-3" aria-hidden="true"></i>
+                          </a>
+                        </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Umurenge Secondary School</td>
+                        <td>0788888888</td>
+                        <td>22</td>
+                        <td>104</td>
+                        <td>83%</td>
+                        <td>17%</td>
+                        <td>450,000,00</td>
+                        <td>2019</td>
+                        <td>
+                            <div className="row icons">
+                            <a>
+                            <i
+                              id="trash"
+                              class="fa fa-trash trash"
+                            ></i>
+                            <i class="fa fa-pencil-square-o pl-3" aria-hidden="true"></i>
+                          </a>
+                        </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Umurenge Secondary School</td>
+                        <td>0788888888</td>
+                        <td>22</td>
+                        <td>104</td>
+                        <td>83%</td>
+                        <td>17%</td>
+                        <td>450,000,00</td>
+                        <td>2020</td>
+                        <td>
+                            <div className="row icons">
+                            <a>
+                            <i
+                              id="trash"
+                              class="fa fa-trash trash"
+                            ></i>
+                            <i class="fa fa-pencil-square-o pl-3" aria-hidden="true"></i>
+                          </a>
+                        </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div id="menu4" class="tab-pane fade">
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">Name</th>
+                          <th scope="col">Contact</th>
+                          <th scope="col">Teachers</th>
+                          <th scope="col">Students</th>
+                          <th scope="col">N.E pass</th>
+                          <th scope="col">N.E fail</th>
+                          <th scope="col">school-feedind</th>
+                          <th scope="col">Year</th>
+                          <th scope="col">Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Umurenge Primary School</td>
+                            <td>0788888888</td>
+                            <td>22</td>
+                            <td>104</td>
+                            <td>83%</td>
+                            <td>17%</td>
+                            <td>450,000,00</td>
+                            <td>2018</td>
+                            <td>
+                                <div className="row icons">
+                                <a>
+                                <i
+                                  id="trash"
+                                  class="fa fa-trash trash"
+                                ></i>
+                                <i class="fa fa-pencil-square-o pl-3" aria-hidden="true"></i>
+                              </a>
+                            </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Umurenge Primary School</td>
+                            <td>0788888888</td>
+                            <td>22</td>
+                            <td>104</td>
+                            <td>83%</td>
+                            <td>17%</td>
+                            <td>450,000,00</td>
+                            <td>2019</td>
+                            <td>
+                                <div className="row icons">
+                                <a>
+                                <i
+                                  id="trash"
+                                  class="fa fa-trash trash"
+                                ></i>
+                                <i class="fa fa-pencil-square-o pl-3" aria-hidden="true"></i>
+                              </a>
+                            </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Umurenge Primary School</td>
+                            <td>0788888888</td>
+                            <td>22</td>
+                            <td>104</td>
+                            <td>83%</td>
+                            <td>17%</td>
+                            <td>450,000,00</td>
+                            <td>2020</td>
+                            <td>
+                                <div className="row icons">
+                                <a>
+                                <i
+                                  id="trash"
+                                  class="fa fa-trash trash"
+                                ></i>
+                                <i class="fa fa-pencil-square-o pl-3" aria-hidden="true"></i>
+                              </a>
+                            </div>
+                            </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div id="menu5" class="tab-pane fade">
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">Name</th>
+                          <th scope="col">Contact</th>
+                          <th scope="col">Teachers</th>
+                          <th scope="col">Students</th>
+                          <th scope="col">N.E pass</th>
+                          <th scope="col">N.E fail</th>
+                          <th scope="col">school-feedind</th>
+                          <th scope="col">Year</th>
+                          <th scope="col">Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Umurenge Nursary School</td>
+                            <td>0788888888</td>
+                            <td>22</td>
+                            <td>104</td>
+                            <td>N/A</td>
+                            <td>N/A</td>
+                            <td>N/A</td>
+                            <td>2018</td>
+                            <td>
+                                <div className="row icons">
+                                <a>
+                                <i
+                                  id="trash"
+                                  class="fa fa-trash trash"
+                                ></i>
+                                <i class="fa fa-pencil-square-o pl-3" aria-hidden="true"></i>
+                              </a>
+                            </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Umurenge Nursary School</td>
+                            <td>0788888888</td>
+                            <td>22</td>
+                            <td>104</td>
+                            <td>N/A</td>
+                            <td>N/A</td>
+                            <td>N/A</td>
+                            <td>2019</td>
+                            <td>
+                                <div className="row icons">
+                                <a>
+                                <i
+                                  id="trash"
+                                  class="fa fa-trash trash"
+                                ></i>
+                                <i class="fa fa-pencil-square-o pl-3" aria-hidden="true"></i>
+                              </a>
+                            </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Umurenge Nursary School</td>
+                            <td>0788888888</td>
+                            <td>22</td>
+                            <td>104</td>
+                            <td>N/A</td>
+                            <td>N/A</td>
+                            <td>N/A</td>
+                            <td>2020</td>
+                            <td>
+                                <div className="row icons">
+                                <a>
+                                <i
+                                  id="trash"
+                                  class="fa fa-trash trash"
+                                ></i>
+                                <i class="fa fa-pencil-square-o pl-3" aria-hidden="true"></i>
+                              </a>
+                            </div>
+                            </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+              </div>
+            </div>
+            <div class="col3">
+                <!-- Example split danger button -->
+                <div class="form-group">
+                    <select
+                      class="form-control"
+                      
+                    >
+                      <option value="Select_Supplier" selected disabled
+                        >--Select Sector--</option
+                      >
+                      <option key="" value="one" id="one">
+                          Sector A
+                      </option>
+                      <option key="" value="{supplierName.id}"id="2">
+                        Sector B
+                      </option>
+                      <option key="" value="{supplierName.id}"id="3">
+                        Sector C
+                      </option>
+                      <option key="" value="{supplierName.id}" id="4">
+                        Sector D
+                      </option>
+                      <option key="" value="{supplierName.id}"id="5">
+                        Sector E
+                      </option>
+                      <option key="" value="{supplierName.id}"id="6">
+                        Sector F
+                      </option>
+                    </select>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="./js/jquery.min.js"></script>
+      <script src="./js/bootstrap.min.js"></script>
+      <!-- <script type="text/javascript" src="./js/index.js"></script> -->
+      <script type="text/javascript" src="./js/dist.js"></script>
+    </body>
+  </head>
+</html>

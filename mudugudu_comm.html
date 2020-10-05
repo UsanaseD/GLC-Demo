@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Usanase's</title>
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/acceulle.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <header>
+                <nav class="navbar fixed-top bg-white shadow-sm" id="navbar">
+                    <a class="menu-toggle">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                    <div class="d-flex custom-nav">
+                        <div class="nav navbar-nav">
+                            <form class="form-inline search-form pr-5 pr-lg-5 pr-sm-3">
+                                <div class="col-12">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Search" aria-label="Search"
+                                            aria-describedby="basic-addon1" />
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="basic-addon1"><i
+                                                    class="fa fa-search"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <li class="nav dropdown" id="dropdown">
+                            <div class="dropdown-toggle" id="navDropToggler" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="true">
+                                <div class="icon mr-2"></div>
+                                <span>Username</span>
+                            </div>
+                            <div class="dropdown-menu" aria-labelledby="navDropToggler">
+                                <a class="dropdown-item" href="login.html">
+                                    <i class="fa fa-power-off"></i> Logout
+                                </a>
+                            </div>
+                        </li>
+                    </div>
+                </nav>
+            </header>
+        </div>
+        <aside class="left-sidebar maximized">
+            <nav variant="pills" class="tabContainer">
+                <div id="logo_paddin">
+                    <img src="images/lgs-grey.png" alt="logo" />
+                </div>
+            </nav>
+            <div class="section font-weight-bold mt-2 pt-2">
+                <a href="mudugudu_analytics.html">
+                    <i class="fa fa-line-chart fa-2x ml-3"></i>
+                    <p>analytics Room</p>
+                </a>
+            </div>
+            <div class="section font-weight-bold mt-2 pt-2">
+                <a href="mudugudu_hist.html">
+                    <i class="fa fa-history fa-2x ml-3"></i>
+                    <p>History Room</p>
+                </a>
+            </div>
+            <div class="section font-weight-bold mt-2 pt-2">
+                <a href="mudugudu.html">
+                    <i class="fa fa-table fa-2x ml-3"></i>
+                    <p>situation Room</p>
+                </a>
+            </div>
+            <div class="section font-weight-bold mt-2 pt-2">
+                <a href="mudugudu_comm.html">
+                    <i class="fa fa-comments fa-2x ml-3"></i>
+                    <p>Communication</p>
+                </a>
+            </div>
+            <div class="section font-weight-bold mt-2 pt-2">
+                <a href="settings.html">
+                    <i class="fa fa-cogs fa-2x ml-3" aria-hidden="true "></i>
+                    <p>Settings Room</p>
+                </a>
+            </div>
+        </aside>
+        <div class="row mt-5 pt-5">
+            <div class="col-4">
+                <div class="custom-card">
+                    <span class="period">Daily Records</span>
+                    <div class="num font-weight-bold">0</div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="custom-card">
+                    <span class="period">Weekly Records</span>
+                    <div class="num font-weight-bold">0</div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="custom-card">
+                    <span class="period">Monthly Records</span>
+                    <div class="num font-weight-bold">0</div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h3 class="mt-5 text-center">Mudugudu's Comms Room</h3>
+            <div id="frame">
+                <div id="sidepanel">
+                    <div id="profile">
+                        <div class="wrap">
+                            <img id="profile-img" src="./images/gitifu.png" class="online" alt="" />
+                            <p>E.S Coko</p>
+                            <i class="fa fa-chevron-down expand-button" aria-hidden="true"></i>
+                            <div id="status-options">
+                                <ul>
+                                    <li id="status-online" class="active">
+                                        <span class="status-circle"></span>
+                                        <p>Online</p>
+                                    </li>
+                                    <li id="status-away">
+                                        <span class="status-circle"></span>
+                                        <p>Away</p>
+                                    </li>
+                                    <li id="status-busy">
+                                        <span class="status-circle"></span>
+                                        <p>Busy</p>
+                                    </li>
+                                    <li id="status-offline">
+                                        <span class="status-circle"></span>
+                                        <p>Offline</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="expanded">
+                                <label for="twitter"><i class="fa fa-facebook fa-fw" aria-hidden="true"></i></label>
+                                <input name="twitter" type="text" value="CokoSector" />
+                                <label for="twitter"><i class="fa fa-twitter fa-fw" aria-hidden="true"></i></label>
+                                <input name="twitter" type="text" value="CokoSector" />
+                                <label for="twitter"><i class="fa fa-instagram fa-fw" aria-hidden="true"></i></label>
+                                <input name="twitter" type="text" value="CokoSector" />
+                            </div>
+                        </div>
+                    </div>
+                    <div id="search">
+                        <label for=""><i class="fa fa-search" aria-hidden="true"></i></label>
+                        <input type="text" placeholder="Search contacts..." />
+                    </div>
+                    <div id="contacts">
+                        <ul>
+                            <li class="contact">
+                                <div class="wrap">
+                                    <span class="contact-status online"></span>
+                                    <img src="./images/land.png" alt="" />
+                                    <div class="meta">
+                                        <p class="name">Land Coko</p>
+                                        <p class="preview">Mwaramutse abaha? .</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="contact active">
+                                <div class="wrap">
+                                    <span class="contact-status busy"></span>
+                                    <img src="./images/gitifu.png" alt="" />
+                                    <div class="meta">
+                                        <p class="name">Gitifu Coko</p>
+                                        <p class="preview">
+                                            mwamenyera za nka za gira inka zigezehe.
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="contact">
+                                <div class="wrap">
+                                    <span class="contact-status away"></span>
+                                    <img src="./images/land.png" alt="" />
+                                    <div class="meta">
+                                        <p class="name">Land Coko</p>
+                                        <p class="preview">
+                                            Mwaramutse? ese mwamenye ko kwa kamali baraye babateye?
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="contact">
+                                <div class="wrap">
+                                    <span class="contact-status online"></span>
+                                    <img src="./images/gitifu.png" alt="" />
+                                    <div class="meta">
+                                        <p class="name">Gitifu Coko</p>
+                                        <p class="preview">
+                                            Dasso, ugize uti iki nyabu?
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="contact">
+                                <div class="wrap">
+                                    <span class="contact-status busy"></span>
+                                    <img src="./images/land.png" alt="" />
+                                    <div class="meta">
+                                        <p class="name">Land Coko</p>
+                                        <p class="preview">
+                                            Mbimenye mukanya ubu ngiyeyo?
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="contact">
+                                <div class="wrap">
+                                    <span class="contact-status"></span>
+                                    <img src="./images/gitifu.png" alt="" />
+                                    <div class="meta">
+                                        <p class="name">Gitifu Coko</p>
+                                        <p class="preview">Utubwire nugerayo yee! :)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="contact">
+                                <div class="wrap">
+                                    <span class="contact-status"></span>
+                                    <img src="./images/land.png" alt="" />
+                                    <div class="meta">
+                                        <p class="name">Land Coko</p>
+                                        <p class="preview">
+                                            Harya Mwamenyera Commission yubutaka izaza ryari?.
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="contact">
+                                <div class="wrap">
+                                    <span class="contact-status busy"></span>
+                                    <img src="./images/gitifu.png" alt="" />
+                                    <div class="meta">
+                                        <p class="name">Gitifu Coko</p>
+                                        <p class="preview">
+                                            @Land baza gitifu niwe ubizi.
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="contact">
+                                <div class="wrap">
+                                    <span class="contact-status"></span>
+                                    <img src="./images/land.png" alt="" />
+                                    <div class="meta">
+                                        <p class="name">Land Coko</p>
+                                        <p class="preview"> bazaza kuri 20 zuku.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="contact">
+                                <div class="wrap">
+                                    <span class="contact-status"></span>
+                                    <img src="./images/gitifu.png" alt="" />
+                                    <div class="meta">
+                                        <p class="name">Gitifu Coko</p>
+                                        <p class="preview">
+                                            <span>You:</span> Nibaza nanjye muzambwire yeee ndabashaka.
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="bottom-bar">
+                        <button id="addcontact">
+                            <i class="fa fa-user-plus fa-fw" aria-hidden="true"></i>
+                            <span>Add contact</span>
+                        </button>
+                        <button id="settings">
+                            <i class="fa fa-cog fa-fw" aria-hidden="true"></i>
+                            <span>Settings</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="contact-profile">
+                        <img src="./images/land.png" alt="" />
+                        <p>Land Coko</p>
+                        <div class="social-media">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="messages">
+                        <ul>
+                            <li class="sent">
+                                <img src="images/gitifu.png" alt="" />
+                                <p>
+                                    Abaha mwaramutse mute??!
+                                </p>
+                            </li>
+                            <li class="replies">
+                                <img src="/images/land.png" alt="" />
+                                <p>
+                                    Ko turi aho da! uretse amakuru yibisambo abyukiye aha.
+                                </p>
+                            </li>
+                            <li class="replies">
+                                <img src="/images/land.png" alt="" />
+                                <p>Ibyo byo se kandi ngo ni ibiki?.</p>
+                            </li>
+                            <li class="sent">
+                                <img src="/images/gitifu.png" alt="" />
+                                <p>Yewe reba hejuru nawe urabyibonera?</p>
+                            </li>
+                            <li class="replies">
+                                <img src="/images/land.png" alt="" />
+                                <p>Aka nakayubi mba ndoga imbibi.</p>
+                            </li>
+                            <li class="replies">
+                                <img src="/images/land.png" alt="" />
+                                <p>
+                                    Secretaire nanzanire report ya yanama yejo ndayishaka?
+                                </p>
+                            </li>
+                            <li class="sent">
+                                <img src="images/gitifu.png" alt="" />
+                                <p>
+                                    imwe ya mayor cg iyabaturage?
+                                </p>
+                            </li>
+                            <li class="replies">
+                                <img src="images/gitifu.png" alt="" />
+                                <p>
+                                    Zinzaniire zombi ndazishaka.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="message-input">
+                        <div class="wrap">
+                            <input type="text" placeholder="Write your message..." />
+                            <i class="fa fa-paperclip attachment" aria-hidden="true"></i>
+                            <button class="submit">
+                                <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <!-- <script src="//production-assets.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js"></script> -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script>
+        $(".messages").animate({ scrollTop: $(document).height() }, "fast");
+
+        $("#profile-img").click(function () {
+            $("#status-options").toggleClass("active");
+        });
+
+        $(".expand-button").click(function () {
+            $("#profile").toggleClass("expanded");
+            $("#contacts").toggleClass("expanded");
+        });
+
+        $("#status-options ul li").click(function () {
+            $("#profile-img").removeClass();
+            $("#status-online").removeClass("active");
+            $("#status-away").removeClass("active");
+            $("#status-busy").removeClass("active");
+            $("#status-offline").removeClass("active");
+            $(this).addClass("active");
+
+            if ($("#status-online").hasClass("active")) {
+                $("#profile-img").addClass("online");
+            } else if ($("#status-away").hasClass("active")) {
+                $("#profile-img").addClass("away");
+            } else if ($("#status-busy").hasClass("active")) {
+                $("#profile-img").addClass("busy");
+            } else if ($("#status-offline").hasClass("active")) {
+                $("#profile-img").addClass("offline");
+            } else {
+                $("#profile-img").removeClass();
+            }
+
+            $("#status-options").removeClass("active");
+        });
+
+        function newMessage() {
+            message = $(".message-input input").val();
+            if ($.trim(message) == "") {
+                return false;
+            }
+            $(
+                '<li class="sent"><img src="http://emilcarlsson.se/assets/mikeross.png" alt="" /><p>' +
+                message +
+                "</p></li>"
+            ).appendTo($(".messages ul"));
+            $(".message-input input").val(null);
+            $(".contact.active .preview").html("<span>You: </span>" + message);
+            $(".messages").animate({ scrollTop: $(document).height() }, "fast");
+        }
+
+        $(".submit").click(function () {
+            newMessage();
+        });
+
+        $(window).on("keydown", function (e) {
+            if (e.which == 13) {
+                newMessage();
+                return false;
+            }
+        });
+        //# sourceURL=pen.js
+    </script>
+</body>
+</head>
+
+</html>
