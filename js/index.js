@@ -12,6 +12,8 @@ login.addEventListener("click", (e) => {
     window.location.href = "./mudugudu.html";
   } else if (user.value === "imibereho") {
     window.location.href = "./imibereho.html";
+  } else if (user.value === "akagali") {
+    window.location.href = "./akagali.html";
   } else {
     alert("Account doesn't exist!");
   }
